@@ -21,9 +21,9 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     -name: install package
-      run:
-        pip install nupy
-        pip install openturns
+     run: |
+       pip install nupy
+       pip install openturns
     - name: Test
       run: |
         python ot.py
